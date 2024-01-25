@@ -50,9 +50,10 @@ kt_android_library(
         "//opensource/androidx:annotation",
         "//runner/monitor",
         "//services/storage",
-        "@maven//:androidx_concurrent_concurrent_futures",
+        "@maven//:androidx_concurrent_concurrent_futures_ktx",
         "@maven//:androidx_lifecycle_lifecycle_common",
         "@maven//:androidx_tracing_tracing",
+        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core:kotlinx_coroutines-android",
         "@maven_listenablefuture//:com_google_guava_listenablefuture",
     ],
 )

@@ -12,6 +12,7 @@
 
 **API Changes**
 * Make DeviceController an public API from ExperimentalTestApi
+* Add internal ControlledLooper#isDrawCallbacksSupported.
 
 **Breaking API Changes**
 

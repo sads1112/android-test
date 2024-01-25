@@ -13,6 +13,7 @@
 **API Changes**
 
 * Added ApplicationInfoBuilder.setFlags(int)
+* Make suspend function versions of ViewCapture/WindowCapture/DeviceCapture APIs
 
 **Breaking API Changes**
 

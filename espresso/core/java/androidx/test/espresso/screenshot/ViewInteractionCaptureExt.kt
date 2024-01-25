@@ -21,7 +21,7 @@ import android.graphics.Bitmap
 import android.view.View
 import androidx.concurrent.futures.ResolvableFuture
 import androidx.test.annotation.ExperimentalTestApi
-import androidx.test.core.view.captureToBitmap
+import androidx.test.core.view.captureToBitmapAsync
 import androidx.test.espresso.EspressoException
 import androidx.test.espresso.IdlingPolicies
 import androidx.test.espresso.UiController
@@ -76,6 +76,6 @@ internal constructor(private val bitmapFuture: ResolvableFuture<Bitmap>) : ViewA
 
   override fun perform(uiController: UiController, view: View) {
     uiController.loopMainThreadUntilIdle()
-    bitmapFuture.setFuture(view.captureToBitmap())
+    bitmapFuture.setFuture(view.captureToBitmapAsync())
   }
 }

@@ -24,6 +24,8 @@ The following artifacts were released:
 
 **API Changes**
 
+* Adopt to ViewCapture API changes 
+
 **Breaking API Changes**
 
 **Known Issues**
